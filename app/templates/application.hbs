@@ -1,0 +1,34 @@
+{{#paper-sidenav-container class="site-nav-container"}}
+
+  {{#paper-sidenav
+    class="md-whiteframe-z2 main-lefthand-nav"
+    name="left"
+    lockedOpen="gt-sm"
+    open=true
+    closed=true
+  }}
+    {{#paper-toolbar as |toolbar|}}
+      {{#paper-toolbar-tools}}Alex<br>Alvarez{{/paper-toolbar-tools}}
+    {{/paper-toolbar}}
+    {{#each sections as |section|}}
+      {{#paper-content class="sidenav-item" padding=true}}
+        {{section.title}}
+      {{/paper-content}}
+    {{/each}}
+
+    {{#with model.user as |user|}}
+    {{!-- TODO see https://github.com/elwayman02/ember-data-github/pull/79 --}}
+      <a href="{{user.htmlUrl}}">
+        <img class="box" src="{{user.avatarUrl}}">
+      </a>
+    {{/with}}
+  {{/paper-sidenav}}
+
+  {{#paper-card-content class="flex"}}
+    <div class="layout-fill layout-align-start-center layout-column" style="height: 500px">
+      Under Construction.
+    </div>
+  {{/paper-card-content}}
+{{/paper-sidenav-container}}
+
+{{outlet}}

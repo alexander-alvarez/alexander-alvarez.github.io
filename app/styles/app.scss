@@ -1,1 +1,26 @@
 @import 'ember-paper';
+
+.site-nav-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.main-lefthand-nav {
+  .sidenav-item {
+    cursor: pointer;
+  }
+
+  .box {
+    // dimensions come from ember-paper defaults
+    height: 320px;
+    width: 320px;
+    // fix in the bottom lefthand corner
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+}
