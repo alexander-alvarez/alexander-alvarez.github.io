@@ -12,7 +12,7 @@ export default Ember.Controller.extend({
 
 
   sections: [
-    {title: 'About Me'},
+    {title: 'Home'},
     {
       title: 'Technologies',
       subsections: [
@@ -20,7 +20,7 @@ export default Ember.Controller.extend({
         {title: 'Backend'}
       ]
     },
-
+    {title: 'About Me'}
   ]
 
 

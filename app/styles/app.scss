@@ -24,3 +24,16 @@
   }
 
 }
+
+$blue-300: #64B5F6;
+
+.clean-link {
+  text-decoration: none;
+
+  &:visited {
+    color: initial;
+  }
+  &:hover {
+    color: $blue-300;
+  }
+}

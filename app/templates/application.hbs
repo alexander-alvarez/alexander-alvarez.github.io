@@ -16,6 +16,18 @@
       {{/paper-content}}
     {{/each}}
 
+    {{#paper-content padding=true}}
+      {{!-- TODO fix alignment. Slack Logo and EmberJS Community Slack should be on same line --}}
+      {{ico-slack}}
+        <a class="clean-link" href="https://embercommunity.slack.com/">
+        EmberJS Community Slack
+      </a>
+      <br>
+      @alexander-alvarez
+
+    {{/paper-content}}
+
+
     {{#with model.user as |user|}}
     {{!-- TODO see https://github.com/elwayman02/ember-data-github/pull/79 --}}
       <a href="{{user.htmlUrl}}">
@@ -25,8 +37,27 @@
   {{/paper-sidenav}}
 
   {{#paper-card-content class="flex"}}
-    <div class="layout-fill layout-align-start-center layout-column" style="height: 500px">
-      Under Construction.
+    <div class="layout-row layout-xs-column">
+      <div class="layout-column flex-xs flex-gt-xs-50">
+        {{#paper-card as |card|}}
+          {{#card.title as |title|}}
+            {{#title.text as |text|}}
+              {{#text.headline}}Technologies{{/text.headline}}
+            {{/title.text}}
+
+          {{/card.title}}
+        {{/paper-card}}
+        {{#paper-card as |card|}}
+          {{#card.title as |title|}}
+            {{#title.text as |text|}}
+              {{#text.headline}}About Me{{/text.headline}}
+            {{/title.text}}
+
+          {{/card.title}}
+        {{/paper-card}}
+
+
+      </div>
     </div>
   {{/paper-card-content}}
 {{/paper-sidenav-container}}
