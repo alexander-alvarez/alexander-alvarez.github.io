@@ -12,7 +12,9 @@
     {{/paper-toolbar}}
     {{#each sections as |section|}}
       {{#paper-content class="sidenav-item" padding=true}}
-        {{section.title}}
+        {{#link-to section.link class="clean-link"}}
+          {{section.title}}
+        {{/link-to}}
       {{/paper-content}}
     {{/each}}
 
@@ -36,30 +38,10 @@
     {{/with}}
   {{/paper-sidenav}}
 
-  {{#paper-card-content class="flex"}}
-    <div class="layout-row layout-xs-column">
-      <div class="layout-column flex-xs flex-gt-xs-50">
-        {{#paper-card as |card|}}
-          {{#card.title as |title|}}
-            {{#title.text as |text|}}
-              {{#text.headline}}Technologies{{/text.headline}}
-            {{/title.text}}
-
-          {{/card.title}}
-        {{/paper-card}}
-        {{#paper-card as |card|}}
-          {{#card.title as |title|}}
-            {{#title.text as |text|}}
-              {{#text.headline}}About Me{{/text.headline}}
-            {{/title.text}}
-
-          {{/card.title}}
-        {{/paper-card}}
-
-
-      </div>
-    </div>
-  {{/paper-card-content}}
 {{/paper-sidenav-container}}
+
+
+{{outlet}}
+
 
 {{outlet}}

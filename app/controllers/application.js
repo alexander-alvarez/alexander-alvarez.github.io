@@ -12,15 +12,19 @@ export default Ember.Controller.extend({
 
 
   sections: [
-    {title: 'Home'},
+    {title: 'Home', link: 'home'},
     {
       title: 'Technologies',
+      link: 'technologies',
       subsections: [
         {title: 'Frontend'},
         {title: 'Backend'}
       ]
     },
-    {title: 'About Me'}
+    {
+      title: 'About Me',
+      link: 'about-me'
+    }
   ]
 
 
