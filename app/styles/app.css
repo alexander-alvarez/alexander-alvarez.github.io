@@ -20,6 +20,11 @@ p, div, span{
 
 .tabs .tab {
   padding: 10px 40px;
+  cursor: pointer;
+}
+
+.tabs .tab:hover {
+  color: #26A9FF;
 }
 
 
