@@ -88,7 +88,7 @@ a:visited {
 }
 
 .about {
-  width: 500px;
+  width: 800px;
 }
 
 .about--build-info {
@@ -136,3 +136,28 @@ a:visited {
   stroke: #999;
   stroke-opacity: .6;
 }
+
+
+/*
+  Media queries for responsiveness
+ */
+@media only screen and (max-width: 800px) {
+  .technology .icons-panel {
+    width: 400px;
+  }
+
+  .about {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 800px) {
+  .about {
+    width: 600px;
+  }
+}
+
+
+
+
+
