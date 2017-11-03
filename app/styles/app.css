@@ -8,6 +8,10 @@ p, div, span{
   font-family: 'Dosis', sans-serif;
 }
 
+ul {
+  padding-left: 20px;
+}
+
 
 .nav-header {
   width: 100%;
@@ -79,7 +83,12 @@ p, div, span{
   justify-content: center;
 }
 
-.down-caret {
-  position: fixed;
 
+.about {
+  width: 500px;
+}
+
+.about--build-info {
+  display: flex;
+  justify-content: space-between;
 }
