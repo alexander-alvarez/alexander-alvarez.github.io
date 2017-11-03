@@ -39,7 +39,7 @@ a:visited {
   color: #26A9FF;
 }
 
-.application-wrapper {
+.application-wrapper .liquid-child{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
