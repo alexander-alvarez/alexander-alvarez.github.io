@@ -114,6 +114,18 @@ a:visited {
   margin-top: 10px;
 }
 
+.icon-holder .icon {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.icon-holder .icon-label {
+  display: block;
+  text-align: center;
+  padding-top: 2px;
+}
+
 
 .networkx-logo circle.node {
   stroke: #fff;
