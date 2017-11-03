@@ -113,3 +113,14 @@ a:visited {
   background: lightgrey;
   margin-top: 10px;
 }
+
+
+.networkx-logo circle.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.networkx-logo path.link , .networkx-logo line.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
